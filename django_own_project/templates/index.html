@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- navbar -->
+          <div class="nav_bar">
+             <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Home</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Service
+                    </a>
+                    <div class="list_menu">
+
+                    </div>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Arts & Crafts</a></li>
+                      <li><a class="dropdown-item" href="#">Automative</a></li>
+
+                      <li><a class="dropdown-item" href="#">Baby</a></li>
+                      <li><a class="dropdown-item" href="#">Beauty & Personal Care</a> </li>
+                      <li><a class="dropdown-item" href="#">Books</a> </li>
+                      <li><a class="dropdown-item" href="#">Boy's Fashion</a> </li>
+                      <li><a class="dropdown-item" href="#">Computers</a> </li>
+                      <li><a class="dropdown-item" href="#">Deals</a> </li>
+                      <li><a class="dropdown-item" href="#">Digital Music</a> </li>
+                      <li><a class="dropdown-item" href="#">Electronics</a> </li>
+                      <li><a class="dropdown-item">Girl's Fashion</a></li>
+                      <li><a class="dropdown-item">Heath & Household</a> </li>
+                      <li><a class="dropdown-item">Home & Kitchen</a> </li>
+                      <li><a class="dropdown-item">Industrial & Scientific</a> </li>
+                      <li><a class="dropdown-item">Kindle Store</a> </li>
+                      <li><a class="dropdown-item">Luggage</a> </li>
+                      <li><a class="dropdown-item">Men's Fashion</a></li>
+                      <li><a class="dropdown-item">Movies & TV</a> </li>
+                      <li><a class="dropdown-item">Music, CDs & Vinyl</a> </li>
+
+                    </ul>
+                  </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    LogIn
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Login Form
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"
+                                >Email address</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                              />
+                              <div id="emailHelp" class="form-text">
+                                We'll never share your email with anyone else.
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="exampleInputPassword1"
+                              />
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="exampleCheck1"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="exampleCheck1"
+                                >Check me out</label
+                              >
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" style="color: red">
+          <!-- title section -->
+          <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <!-- items slider -->
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://icms-image.slatic.net/images/ims-web/10fd4fef-b2cd-4ee3-b1ae-ab3a069b5d2e.jpg_1200x1200.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  style="height: 200px; width: 200px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://icms-image.slatic.net/images/ims-web/865ba11b-a29d-4946-8a91-1753e2f42ad0.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://icms-image.slatic.net/images/ims-web/a03db8bf-74f4-4bed-8e1b-e02e7a69254c.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <!-- something -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://static-01.daraz.com.np/p/c617bfe0aed27c4bb0dbf943c799e3ad.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Mac-Book</h5>
+              <p class="card-text">Mac-book. 12Gen 512</p>
+              <a href="#" class="btn btn-primary">Add to Card</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- something -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://static-01.daraz.com.np/p/0caaafe82707a812ea50978763fb5fdb.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Thin-Pad</h5>
+              <p class="card-text">Lenovo Thin-Pad 11 Gen 512GB</p>
+              <a href="#" class="btn btn-primary">Add to Card</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- something -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://static-01.daraz.com.np/p/a29c832e30e6bdc647974fcb6064df5e.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">HP</h5>
+              <p class="card-text">
+                Hp 10Gen make up the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Add to Card</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- something -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://static-01.daraz.com.np/p/d9b077d31179cebd64dff4192ad74280.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">DELL</h5>
+              <p class="card-text">DELL 13Gen 1TB</p>
+              <a href="#" class="btn btn-primary">Add to Card</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Just for you -->
+    <p class="display-1 lead-text-start text-info">Just For You</p>
+    <a
+      class="btn btn-primary"
+      data-bs-toggle="offcanvas"
+      href="#offcanvasExample"
+      role="button"
+      aria-controls="offcanvasExample"
+    >
+      Link with
+    </a>
+    <button
+      class="btn btn-primary"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample"
+    >
+      Button with data-bs-target
+    </button>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
